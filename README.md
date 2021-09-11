@@ -1,27 +1,24 @@
-# App
+# Menu despegable
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
 
-## Development server
+## Objetivos:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Seleccionar directamente las opciones del menú; utilice el formato Alt-X.
 
-## Code scaffolding
+## Objetivos alcanzados
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Seleccionar directamente las opciones del menú; utilice el formato Alt-X.
 
-## Build
+## Imagenes de ejemplo
+![image](https://user-images.githubusercontent.com/73377322/132937704-85872721-11c3-4dfe-a62a-e21596b0ee72.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+![image](https://user-images.githubusercontent.com/73377322/132937710-e4c8bcd6-4d7c-42b8-a046-46cbd7390e4e.png)
 
-## Running unit tests
+![image](https://user-images.githubusercontent.com/73377322/132937715-e828a9c2-c692-425f-bb9b-8e77ec165d62.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
