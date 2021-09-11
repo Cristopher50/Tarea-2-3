@@ -1,0 +1,42 @@
+
+<div >
+<div  class="example-container" [class.example-is-mobile]="mobileQuery.matches" *ngIf="shouldRun"> <!-- (keyup)="onKeyDownHandler($event)" -->
+  <mat-toolbar color="primary" class="example-toolbar">
+    <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+    <h1 class="example-app-name">App</h1>
+    <span class="example-spacer"></span>
+    <button mat-icon-button >
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button >
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <mat-sidenav-container  class="example-sidenav-container"  [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+      <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"  [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+      <mat-nav-list>
+        <a mat-list-item  (click)="click(nav)"  *ngFor="let nav of fillerNav" [id]="nav.id" [name]="nav.name" #a>
+          <span class="mr-2"><strong> [{{nav.id}}]</strong></span>
+          {{nav.name}}</a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content >
+      <mat-card>
+           <div class="jumbotron m-5 ">
+            <div class="container">
+              <h1 class="display-4"> {{menu.name}}</h1>
+              <p class="lead"> Mostrar/Ocultar menu: alt + x</p>
+              <p class="lead"> Seleccionar menu: alt + letra de menu</p>
+            </div>
+          </div>
+        </mat-card>
+      <!-- <p *ngFor="let content of fillerContent">{{content}}</p> -->
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+<div *ngIf="!shouldRun">Please open on Stackblitz to see result</div>
+</div>
+<router-outlet></router-outlet>
